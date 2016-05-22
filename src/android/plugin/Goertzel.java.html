@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.10: http://docutils.sourceforge.net/" />
+<title></title>
+<style type="text/css">
+
+/*
+Author: Peter Parente
+Date: 2008/01/22
+Version: 1.0
+Copyright: This stylesheet has been placed in the public domain - free to edit and use for all uses.
+*/
+
+body {
+  font: 100% sans-serif;
+  background: #ffffff;
+  color: black;
+  margin: 2em;
+  padding: 0em 2em;
+}
+
+p.topic-title {
+  font-weight: bold;
+}
+
+table.docinfo {
+  text-align: left;
+  margin: 2em 0em;
+}
+
+a[href] {
+  color: #436976;
+  background-color: transparent;
+}
+
+a.toc-backref {
+  text-decoration: none;
+}
+
+h1 a[href] {
+  color: #003a6b;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a.strong {
+  font-weight: bold;
+}
+
+img {
+  margin: 0;
+  border: 0;
+}
+
+p {
+  margin: 0.5em 0 1em 0;
+  /*line-height: 1.5em;*/
+}
+
+p a:visited {
+  color: purple;
+  background-color: transparent;
+}
+
+p a:active {
+  color: red;
+  background-color: transparent;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+p img {
+  border: 0;
+  margin: 0;
+}
+
+p.rubric {
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1.title {
+  color: #003a6b;
+  font-size: 250%;
+  margin-bottom: 0em;
+}
+
+h2.subtitle {
+  color: #003a6b;
+  border-bottom: 0px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #555;
+  background-color: transparent;
+  margin: 0em;
+  padding-top: 0.5em;
+}
+
+h1 {
+  font-size: 160%;
+  margin-bottom: 0.5em;
+  border-bottom: 2px solid #aaa;
+}
+
+h2 {
+  font-size: 140%;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid #aaa;
+}
+
+h3 {
+  font-size: 130%;
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: 110%;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+h5 {
+  font-size: 105%;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+h6 {
+  font-size: 100%;
+  font-weight: bold;
+  margin-bottom: 0.5em;
+}
+
+dt {
+  font-style: italic;
+}
+
+dd {
+  margin-bottom: 1.5em;
+}
+
+div.admonition, div.note, div.tip, div.caution, div.important {
+  margin: 2em 2em;
+  padding: 0em 1em;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-bottom: 2px solid #555;
+  border-right: 2px solid #555;
+}
+
+div.important {
+  background: transparent url('../images/important.png') 10px 2px no-repeat;
+}
+
+div.caution {
+  background: transparent url('../images/caution.png') 10px 2px no-repeat;
+}
+
+div.note {
+  background: transparent url('../images/note.png') 10px 2px no-repeat;
+}
+
+div.tip {
+  background: transparent url('../images/tip.png') 10px 2px no-repeat;
+}
+
+div.admonition-example {
+  background: transparent url('../images/tip.png') 10px 2px no-repeat;
+}
+
+div.admonition-critical-example {
+  background: transparent url('../images/important.png') 10px 2px no-repeat;
+}
+
+p.admonition-title {
+  font-weight: bold;
+  border-bottom: 1px solid #aaa;
+  padding-left: 30px;
+}
+
+table.docutils {
+  text-align: left;
+  border: 1px solid gray;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1.5em 0em;
+}
+
+table.docutils caption {
+  font-style: italic;
+}
+
+table.docutils td, table.docutils th {
+  padding: 0.25em 0.5em;
+}
+
+table.docutils th {
+  background-color: #dddddd;
+}
+
+div.sidebar {
+  width: 33%;
+  float: right;
+  margin: 0em 2em;
+  padding: 0em 1em;
+  border-top: 1px solid #aaa;
+  border-left: 1px solid #aaa;
+  border-bottom: 2px solid #555;
+  border-right: 2px solid #555;
+}
+
+p.sidebar-title {
+  margin-bottom: 0em;
+  color: #003a6b;
+  border-bottom: 1px solid #aaa;
+  font-weight: bold;
+}
+
+p.sidebar-subtitle {
+  margin-top: 0em;
+  font-style: italic;
+  color: #003a6b;
+}
+
+li p.first {
+  margin: 0;
+  display: inline;
+  line-height: normal;
+}
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<p>package info.newforestcicada.plugin;</p>
+<p>import android.util.FloatMath;
+import android.util.Log;</p>
+<div class="system-message">
+<p class="system-message-title">System Message: INFO/1 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 7)</p>
+Possible title underline, too short for the title.
+Treating it as ordinary text because it's so short.</div>
+<p>public class Goertzel
+{</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 8)</p>
+Unexpected indentation.</div>
+<blockquote>
+<p>private static final int MAX_FILTER_SIZE = 1024;
+private static final double M_PI = Math.PI;
+//private int k;
+private float k;
+private int N;</p>
+<p>private float[] hamming = new float[MAX_FILTER_SIZE];</p>
+<p>private float realW;</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 17)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>//      private float imagW;</p>
+<blockquote>
+<p>private float y;
+private float d1;
+private float d2;</p>
+<p>private int index;</p>
+<p>private Kalman kalman;</p>
+<p>public Goertzel(int N, float centralFrequency, float samplingRate)
+{</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 29)</p>
+Unexpected indentation.</div>
+<blockquote>
+this.N = N;
+float bandwidth = 4 * samplingRate / N;
+init(centralFrequency, bandwidth, samplingRate);</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 32)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<div class="system-message">
+<p class="system-message-title">System Message: INFO/1 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 32)</p>
+Unexpected possible title overline or transition.
+Treating it as ordinary text because it's so short.</div>
+<p>}</p>
+<p>/*
+public Goertzel(float centralFrequency, float bandpassWidth, float samplingRate)
+{</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 37)</p>
+Unexpected indentation.</div>
+<blockquote>
+//assert true == false;
+N = (int) Math.floor(0.5 + 4 * samplingRate / bandpassWidth);
+init(centralFrequency, bandpassWidth, samplingRate);</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 40)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>}*/</p>
+<p>private void init(float centralFrequency, float bandpassWidth, float samplingRate)
+{</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 44)</p>
+Unexpected indentation.</div>
+<blockquote>
+<p>//k = (int) Math.floor(0.5 + 4 * centralFrequency / bandpassWidth);
+k = 4 * centralFrequency / bandpassWidth;
+//Log.d(&quot;GOERTZEL&quot;, &quot;N:&quot;+N+&quot; k:&quot;+k);</p>
+<dl class="docutils">
+<dt>for ( int n=0; n&lt;N; n++ ) {</dt>
+<dd>hamming[n] = (float) (0.54 - 0.46 * Math.cos(2*M_PI*n/N));</dd>
+</dl>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 50)</p>
+Definition list ends without a blank line; unexpected unindent.</div>
+<div class="system-message">
+<p class="system-message-title">System Message: INFO/1 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 50)</p>
+Unexpected possible title overline or transition.
+Treating it as ordinary text because it's so short.</div>
+<p>}</p>
+<p>realW = (float) (2.0*Math.cos(2.0*M_PI*k/N));</p>
+</blockquote>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 53)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>//              imagW = FloatMath.sin((float) (2.0*M_PI*k/N));</p>
+<blockquote>
+<blockquote>
+<p>y = 0;
+d1 = 0;
+d2 = 0;</p>
+<p>index = 0;</p>
+<p>kalman = new Kalman(0.01f, 5.0f, 1.0f, 1.0f);</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: INFO/1 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 63)</p>
+Unexpected possible title overline or transition.
+Treating it as ordinary text because it's so short.</div>
+<p>}</p>
+<p>public void updateWithSample(float sample)
+{</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 67)</p>
+Unexpected indentation.</div>
+<blockquote>
+<p>y = hamming[index]*sample + realW*d1 - d2;
+d2 = d1;
+d1 = y;</p>
+<p>if ( index++ == N ) {</p>
+<blockquote>
+<p>index = 0;</p>
+<p>kalman.updateWithMeasurement(FloatMath.sqrt(d1*d1 + d2*d2 - d1*d2*realW));</p>
+<p>y = 0;
+d1 = 0;
+d2 = 0;</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: INFO/1 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 81)</p>
+Unexpected possible title overline or transition.
+Treating it as ordinary text because it's so short.</div>
+<p>}</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: INFO/1 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 83)</p>
+Unexpected possible title overline or transition.
+Treating it as ordinary text because it's so short.</div>
+<p>}</p>
+<p>public float getValue()
+{</p>
+<div class="system-message">
+<p class="system-message-title">System Message: ERROR/3 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 87)</p>
+Unexpected indentation.</div>
+<blockquote>
+//return FloatMath.sqrt(d1*d1 + d2*d2 - d1*d2*realW);
+return kalman.getEstimate();</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 89)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<div class="system-message">
+<p class="system-message-title">System Message: INFO/1 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 89)</p>
+Unexpected possible title overline or transition.
+Treating it as ordinary text because it's so short.</div>
+<p>}</p>
+</blockquote>
+<div class="system-message">
+<p class="system-message-title">System Message: WARNING/2 (<tt class="docutils">/home/dz2v07/Dropbox/Uni/DTC1/projects/NewForestCicada/projects/cicada-hunt/android/src/info/newforestcicada/plugin/Goertzel.java</tt>, line 90)</p>
+Block quote ends without a blank line; unexpected unindent.</div>
+<p>}</p>
+</div>
+</body>
+</html>

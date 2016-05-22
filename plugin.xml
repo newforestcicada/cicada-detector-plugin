@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        id="cordova-cicada-detector-plugin" version="0.2.3">
+    <name>Cicada Detector</name>
+    <description>Cicada Detector Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>newforestcicada,cicada,cicadahunt,detect,hmm</keywords>
+    <js-module src="www/cicada-detector-plugin.js" name="CicadaDetector">
+        <clobbers target="CicadaDetector" />
+	</js-module>
+    
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="CicadaDetector">
+                <param name="android-package" value="info.newforestcicada.cicadahunt.plugin.CicadaDetectorPlugin" />
+            </feature>
+        </config-file>
+        
+        <config-file target="AndroidManifest.xml" parent="/*">
+            <uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+			<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+			<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+			<uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+			<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+			<uses-permission android:name="android.permission.RECORD_AUDIO" />
+        </config-file>
+        
+        <config-file target="res/values/strings.xml" parent="/*">
+            <string name="MEANS">distribution_means</string>
+            <string name="VARS">distribution_variances</string>
+        </config-file>
+        
+		<source-file src="src/android/hunt/CicadaHunt.java"          target-dir="src/info/newforestcicada/hunt"   />
+		
+		<source-file src="src/android/plugin/Kalman.java"          target-dir="src/info/newforestcicada/plugin" />
+        <source-file src="src/android/plugin/Baselines.java"       target-dir="src/info/newforestcicada/plugin" />
+        <source-file src="src/android/plugin/AudioAnalyser.java"   target-dir="src/info/newforestcicada/plugin" />
+        <source-file src="src/android/plugin/Goertzel.java"        target-dir="src/info/newforestcicada/plugin" />
+        <source-file src="src/android/plugin/Heterodyne.java"      target-dir="src/info/newforestcicada/plugin" />
+		
+		<source-file src="src/android/plugin/IOUtil.java"   target-dir="src/info/newforestcicada/plugin" />
+		<source-file src="src/android/plugin/LongTermResult.java"   target-dir="src/info/newforestcicada/plugin" />
+		<source-file src="src/android/plugin/CicadaDetector.java"   target-dir="src/info/newforestcicada/plugin" />
+		<source-file src="src/android/plugin/CicadaDetectorInterface.java"   target-dir="src/info/newforestcicada/plugin" />
+		<source-file src="src/android/plugin/Emission.java"   target-dir="src/info/newforestcicada/plugin" />
+		<source-file src="src/android/plugin/GetTask.java"   target-dir="src/info/newforestcicada/plugin" />
+		<source-file src="src/android/plugin/Hmm.java"   target-dir="src/info/newforestcicada/plugin" />
+		
+		<source-file src="src/android/plugin/insects/Cicada.java"   target-dir="src/info/newforestcicada/plugin/insects" />
+		<source-file src="src/android/plugin/insects/CommonFieldGrasshopper.java"   target-dir="src/info/newforestcicada/plugin/insects" />
+		<source-file src="src/android/plugin/insects/DarkBushCricket.java"   target-dir="src/info/newforestcicada/plugin/insects" />
+		<source-file src="src/android/plugin/insects/Insect.java"   target-dir="src/info/newforestcicada/plugin/insects" />
+		<source-file src="src/android/plugin/insects/NullInsect.java"   target-dir="src/info/newforestcicada/plugin/insects" />
+		<source-file src="src/android/plugin/insects/RoeselsBushCricket.java"   target-dir="src/info/newforestcicada/plugin/insects" />
+		<source-file src="src/android/plugin/insects/WoodCricket.java"   target-dir="src/info/newforestcicada/plugin/insects" />
+		
+    </platform>
+    
+    
+</plugin>
