@@ -1,13 +1,13 @@
-package info.newforestcicada.plugin;
+package info.newforestcicada.cicadahunt.plugin;
 
-import info.newforestcicada.plugin.Hmm.HmmResult;
-import info.newforestcicada.plugin.insects.Cicada;
-import info.newforestcicada.plugin.insects.CommonFieldGrasshopper;
-import info.newforestcicada.plugin.insects.DarkBushCricket;
-import info.newforestcicada.plugin.insects.Insect;
-import info.newforestcicada.plugin.insects.NullInsect;
-import info.newforestcicada.plugin.insects.RoeselsBushCricket;
-import info.newforestcicada.plugin.insects.WoodCricket;
+import info.newforestcicada.cicadahunt.plugin.Hmm.HmmResult;
+import info.newforestcicada.cicadahunt.plugin.insects.Cicada;
+import info.newforestcicada.cicadahunt.plugin.insects.CommonFieldGrasshopper;
+import info.newforestcicada.cicadahunt.plugin.insects.DarkBushCricket;
+import info.newforestcicada.cicadahunt.plugin.insects.Insect;
+import info.newforestcicada.cicadahunt.plugin.insects.NullInsect;
+import info.newforestcicada.cicadahunt.plugin.insects.RoeselsBushCricket;
+import info.newforestcicada.cicadahunt.plugin.insects.WoodCricket;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;

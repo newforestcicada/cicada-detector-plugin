@@ -1,6 +1,6 @@
-package info.newforestcicada.plugin.insects;
+package info.newforestcicada.cicadahunt.plugin.insects;
 
-import info.newforestcicada.plugin.LongTermResult;
+import info.newforestcicada.cicadahunt.plugin.LongTermResult;
 
 import java.util.ArrayList;
 

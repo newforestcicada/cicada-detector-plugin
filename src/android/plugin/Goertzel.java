@@ -1,4 +1,4 @@
-package info.newforestcicada.plugin;
+package info.newforestcicada.cicadahunt.plugin;
 
 
 public class Goertzel

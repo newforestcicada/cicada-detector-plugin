@@ -14,7 +14,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="CicadaDetector">
-                <param name="android-package" value="info.newforestcicada.cicadahunt.plugin.CicadaDetectorPlugin" />
+                <param name="android-package" value="info.newforestcicada.cicadahunt.plugin.CicadaDetector" />
             </feature>
         </config-file>
         
@@ -32,30 +32,27 @@
             <string name="MEANS">distribution_means</string>
             <string name="VARS">distribution_variances</string>
         </config-file>
-        
-		<source-file src="src/android/hunt/CicadaHunt.java"          target-dir="src/info/newforestcicada/hunt"   />
 		
-		<source-file src="src/android/plugin/Kalman.java"          target-dir="src/info/newforestcicada/plugin" />
-        <source-file src="src/android/plugin/Baselines.java"       target-dir="src/info/newforestcicada/plugin" />
-        <source-file src="src/android/plugin/AudioAnalyser.java"   target-dir="src/info/newforestcicada/plugin" />
-        <source-file src="src/android/plugin/Goertzel.java"        target-dir="src/info/newforestcicada/plugin" />
-        <source-file src="src/android/plugin/Heterodyne.java"      target-dir="src/info/newforestcicada/plugin" />
+		<source-file src="src/android/plugin/Kalman.java"          target-dir="src/info/newforestcicada/cicadahunt/plugin" />
+        <source-file src="src/android/plugin/Baselines.java"       target-dir="src/info/newforestcicada/cicadahunt/plugin" />
+        <source-file src="src/android/plugin/AudioAnalyser.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin" />
+        <source-file src="src/android/plugin/Goertzel.java"        target-dir="src/info/newforestcicada/cicadahunt/plugin" />
+        <source-file src="src/android/plugin/Heterodyne.java"      target-dir="src/info/newforestcicada/cicadahunt/plugin" />
 		
-		<source-file src="src/android/plugin/IOUtil.java"   target-dir="src/info/newforestcicada/plugin" />
-		<source-file src="src/android/plugin/LongTermResult.java"   target-dir="src/info/newforestcicada/plugin" />
-		<source-file src="src/android/plugin/CicadaDetector.java"   target-dir="src/info/newforestcicada/plugin" />
-		<source-file src="src/android/plugin/CicadaDetectorInterface.java"   target-dir="src/info/newforestcicada/plugin" />
-		<source-file src="src/android/plugin/Emission.java"   target-dir="src/info/newforestcicada/plugin" />
-		<source-file src="src/android/plugin/GetTask.java"   target-dir="src/info/newforestcicada/plugin" />
-		<source-file src="src/android/plugin/Hmm.java"   target-dir="src/info/newforestcicada/plugin" />
+		<source-file src="src/android/plugin/IOUtil.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin" />
+		<source-file src="src/android/plugin/LongTermResult.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin" />
+		<source-file src="src/android/plugin/CicadaDetector.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin" />
+		<source-file src="src/android/plugin/Emission.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin" />
+		<source-file src="src/android/plugin/GetTask.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin" />
+		<source-file src="src/android/plugin/Hmm.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin" />
 		
-		<source-file src="src/android/plugin/insects/Cicada.java"   target-dir="src/info/newforestcicada/plugin/insects" />
-		<source-file src="src/android/plugin/insects/CommonFieldGrasshopper.java"   target-dir="src/info/newforestcicada/plugin/insects" />
-		<source-file src="src/android/plugin/insects/DarkBushCricket.java"   target-dir="src/info/newforestcicada/plugin/insects" />
-		<source-file src="src/android/plugin/insects/Insect.java"   target-dir="src/info/newforestcicada/plugin/insects" />
-		<source-file src="src/android/plugin/insects/NullInsect.java"   target-dir="src/info/newforestcicada/plugin/insects" />
-		<source-file src="src/android/plugin/insects/RoeselsBushCricket.java"   target-dir="src/info/newforestcicada/plugin/insects" />
-		<source-file src="src/android/plugin/insects/WoodCricket.java"   target-dir="src/info/newforestcicada/plugin/insects" />
+		<source-file src="src/android/plugin/insects/Cicada.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin/insects" />
+		<source-file src="src/android/plugin/insects/CommonFieldGrasshopper.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin/insects" />
+		<source-file src="src/android/plugin/insects/DarkBushCricket.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin/insects" />
+		<source-file src="src/android/plugin/insects/Insect.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin/insects" />
+		<source-file src="src/android/plugin/insects/NullInsect.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin/insects" />
+		<source-file src="src/android/plugin/insects/RoeselsBushCricket.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin/insects" />
+		<source-file src="src/android/plugin/insects/WoodCricket.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin/insects" />
 		
     </platform>
     

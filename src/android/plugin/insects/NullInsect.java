@@ -1,6 +1,6 @@
-package info.newforestcicada.plugin.insects;
+package info.newforestcicada.cicadahunt.plugin.insects;
 
-import info.newforestcicada.plugin.LongTermResult;
+import info.newforestcicada.cicadahunt.plugin.LongTermResult;
 
 public class NullInsect extends Insect {
 	public static final int ID = 99;

@@ -1,4 +1,4 @@
-package info.newforestcicada.plugin;
+package info.newforestcicada.cicadahunt.plugin;
 
 public class LongTermResult {
 	private boolean found;

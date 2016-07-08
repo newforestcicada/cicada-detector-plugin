@@ -1,4 +1,4 @@
-package info.newforestcicada.plugin;
+package info.newforestcicada.cicadahunt.plugin;
 
 import org.json.JSONArray;
 import org.json.JSONException;
@@ -7,8 +7,9 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.preference.PreferenceManager;
 import android.util.Log;
+
 import info.newforestcicada.hunt.R;
-import info.newforestcicada.plugin.AudioAnalyser;
+import info.newforestcicada.cicadahunt.plugin.AudioAnalyser;
 
 public class Emission {
 

@@ -1,9 +1,9 @@
-package info.newforestcicada.plugin;
+package info.newforestcicada.cicadahunt.plugin;
 
-import info.newforestcicada.plugin.insects.Cicada;
-import info.newforestcicada.plugin.insects.DarkBushCricket;
-import info.newforestcicada.plugin.insects.NullInsect;
-import info.newforestcicada.plugin.insects.RoeselsBushCricket;
+import info.newforestcicada.cicadahunt.plugin.insects.Cicada;
+import info.newforestcicada.cicadahunt.plugin.insects.DarkBushCricket;
+import info.newforestcicada.cicadahunt.plugin.insects.NullInsect;
+import info.newforestcicada.cicadahunt.plugin.insects.RoeselsBushCricket;
 import android.content.Context;
 import android.util.Log;
 

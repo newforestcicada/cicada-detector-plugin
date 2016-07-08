@@ -1,8 +1,8 @@
-package info.newforestcicada.plugin;
+package info.newforestcicada.cicadahunt.plugin;
 
-import info.newforestcicada.plugin.Hmm.HmmResult;
-import info.newforestcicada.plugin.insects.Cicada;
-import info.newforestcicada.plugin.insects.Insect;
+import info.newforestcicada.cicadahunt.plugin.Hmm.HmmResult;
+import info.newforestcicada.cicadahunt.plugin.insects.Cicada;
+import info.newforestcicada.cicadahunt.plugin.insects.Insect;
 
 import java.io.File;
 import java.io.RandomAccessFile;
@@ -15,8 +15,8 @@ import java.util.Map.Entry;
 import java.util.Timer;
 import java.util.TimerTask;
 
-import org.apache.cordova.api.CallbackContext;
-import org.apache.cordova.api.CordovaPlugin;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;

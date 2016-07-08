@@ -1,4 +1,4 @@
-package info.newforestcicada.plugin;
+package info.newforestcicada.cicadahunt.plugin;
 
 import java.io.IOException;
 import java.net.ConnectException;

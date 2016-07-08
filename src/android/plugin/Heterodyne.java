@@ -1,6 +1,4 @@
-package info.newforestcicada.plugin;
-
-import android.util.FloatMath;
+package info.newforestcicada.cicadahunt.plugin;
 
 public class Heterodyne
 {
@@ -68,7 +66,7 @@ public class Heterodyne
 		
 		// Mix the signal with a sine wave
 		
-		intermediate = (float) (yv_H[2] * FloatMath.sin(time));
+		intermediate = (float) (yv_H[2] * Math.sin(time));
 		
 		// Low pass filter - 1st order Butterworth @ 1000Hz
 		
@@ -91,9 +89,6 @@ public class Heterodyne
 	{
 		return finalValue;
 	}
-	
-	
-	
 	
 }
 

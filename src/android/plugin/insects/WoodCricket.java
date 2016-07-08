@@ -1,7 +1,7 @@
-package info.newforestcicada.plugin.insects;
+package info.newforestcicada.cicadahunt.plugin.insects;
 
-import info.newforestcicada.plugin.AudioAnalyser;
-import info.newforestcicada.plugin.LongTermResult;
+import info.newforestcicada.cicadahunt.plugin.AudioAnalyser;
+import info.newforestcicada.cicadahunt.plugin.LongTermResult;
 
 import java.util.ArrayList;
 import java.util.Collections;
