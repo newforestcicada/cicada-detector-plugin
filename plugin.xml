@@ -55,6 +55,38 @@
 		<source-file src="src/android/plugin/insects/WoodCricket.java"   target-dir="src/info/newforestcicada/cicadahunt/plugin/insects" />
 		
     </platform>
-    
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="CicadaDetector">
+                <param name="ios-package" value="CicadaDetector"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+
+        <framework src="AudioToolbox.framework" />
+        <framework src="CoreAudio.framework" />
+        <header-file src="src/ios/plugin/CicadaDetector.h" />
+        <source-file src="src/ios/plugin/CicadaDetector.m" />
+        <header-file src="src/ios/plugin/CicadaDetectorPlugin.h" />
+        <source-file src="src/ios/plugin/CicadaDetectorPlugin.m" />
+        <source-file src="src/ios/plugin/GoertzelFilter.c" />
+        <header-file src="src/ios/plugin/GoertzelFilter.h" />
+        <source-file src="src/ios/plugin/HMM.c" />
+        <header-file src="src/ios/plugin/HMM.h" />
+        <source-file src="src/ios/plugin/Insect.c" />
+        <header-file src="src/ios/plugin/Insect.h" />
+        <source-file src="src/ios/plugin/KalmanFilter.c" />
+        <header-file src="src/ios/plugin/KalmanFilter.h" />
+        <source-file src="src/ios/plugin/LowPassFilter.c" />
+        <header-file src="src/ios/plugin/LowPassFilter.h" />
+        <header-file src="src/ios/plugin/NSData+MBBase64.h" />
+        <source-file src="src/ios/plugin/NSData+MBBase64.m" />
+        <source-file src="src/ios/plugin/PlayBackBuffer.c" />
+        <header-file src="src/ios/plugin/PlayBackBuffer.h" />
+        <source-file src="src/ios/plugin/RecordingBuffer.c" />
+        <header-file src="src/ios/plugin/RecordingBuffer.h" />
+    </platform>   
     
 </plugin>
