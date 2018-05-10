@@ -351,7 +351,7 @@ static BOOL CheckError(OSStatus error, const char *operation)
 {
     NSURL *url = [[NSBundle mainBundle] URLForResource: @"cicada" withExtension:@"wav"];
     //NSURL *url = [[NSBundle mainBundle] URLForResource: @"darkBushCricket" withExtension:@"wav"];
-    PlayBackBuffer_loadAudio(&_detectorState.playBackBuffer, (CFURLRef)url);
+    PlayBackBuffer_loadAudio(&_detectorState.playBackBuffer, (CFURLRef)CFBridgingRetain(url));
     _detectorState.playBack = true;
 }
 
@@ -519,7 +519,7 @@ static BOOL CheckError(OSStatus error, const char *operation)
 	
 	BOOL error;
 	
-	error = CheckError(AudioFileCreateWithURL((CFURLRef)url,kAudioFileWAVEType,&_detectorState.asbd,kAudioFileFlags_EraseFile,&audioFile), "Couldn't open audio file");
+    error = CheckError(AudioFileCreateWithURL((CFURLRef)CFBridgingRetain(url),kAudioFileWAVEType,&_detectorState.asbd,kAudioFileFlags_EraseFile,&audioFile), "Couldn't open audio file");
 	
 	if ( error ) {
 		return NO;
