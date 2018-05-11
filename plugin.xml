@@ -73,9 +73,9 @@
         <source-file src="src/ios/plugin/CicadaDetectorPlugin.m" />
         <source-file src="src/ios/plugin/GoertzelFilter.c" />
         <header-file src="src/ios/plugin/GoertzelFilter.h" />
-        <source-file src="src/ios/plugin/HMM.c" />
+        <source-file src="src/ios/plugin/HMM.m" />
         <header-file src="src/ios/plugin/HMM.h" />
-        <source-file src="src/ios/plugin/Insect.c" />
+        <source-file src="src/ios/plugin/Insect.m" />
         <header-file src="src/ios/plugin/Insect.h" />
         <source-file src="src/ios/plugin/KalmanFilter.c" />
         <header-file src="src/ios/plugin/KalmanFilter.h" />

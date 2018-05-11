@@ -32,7 +32,7 @@
 
     dateString = [formatter stringFromDate:[NSDate date]];
     
-    [formatter release];
+//    [formatter release];
 
     return dateString;
 
@@ -278,7 +278,13 @@
         
         float value = [[_cicadaDetector getCicada] floatValue];
         
-        NSDictionary *dict = [[NSString stringWithFormat:@"{ \"insect\": 0, \"name\": \"New Forest Cicada\", \"value\": %f }", value] cdvjk_objectFromJSONString];
+        NSError *jsonError;
+        NSString *objectString = [NSString stringWithFormat:@"{ \"insect\": 0, \"name\": \"New Forest Cicada\", \"value\": %f }", value];
+        NSData *objectData = [objectString dataUsingEncoding:NSUTF8StringEncoding];
+        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:objectData
+                                                             options:NSJSONReadingMutableContainers
+                                                               error:&jsonError];
+        
         NSArray *array = [NSArray arrayWithObject:dict];
         
 		pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsArray:array];
@@ -357,8 +363,12 @@
             returnString = [NSString stringWithFormat:@"{ \"insects\" : [ %@ ], \"keep_recording\" : true, \"message\" : 2, \"sonogram\" : \"%@\", \"serialised_sonogram\" : \"%@\" }",[insectList objectAtIndex:0],sonogramString,serialisedSonogramString];
             break;
     }
-
-    NSDictionary *dict = [returnString cdvjk_objectFromJSONString];
+    
+    NSError *jsonError;
+    NSData *objectData = [returnString dataUsingEncoding:NSUTF8StringEncoding];
+    NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:objectData
+                                                         options:NSJSONReadingMutableContainers
+                                                           error:&jsonError];
     
     CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsDictionary: dict];
 	
