@@ -60,7 +60,7 @@
     <platform name="ios">
         <config-file target="config.xml" parent="/*">
             <feature name="CicadaDetector">
-                <param name="ios-package" value="CicadaDetector"/>
+                <param name="ios-package" value="CicadaDetectorPlugin"/>
                 <param name="onload" value="true"/>
             </feature>
         </config-file>
