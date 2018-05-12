@@ -31,8 +31,6 @@
     [formatter setDateFormat:@"yyyy-MM-dd_HH-mm-ss"];
 
     dateString = [formatter stringFromDate:[NSDate date]];
-    
-//    [formatter release];
 
     return dateString;
 
